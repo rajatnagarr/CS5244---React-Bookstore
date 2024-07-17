@@ -1,0 +1,81 @@
+/* CategoryBookListItem.css */
+#book-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    gap: 1em;
+    justify-content: space-evenly;
+}
+
+.book-box {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    gap: 0.25em;
+    position: relative;
+    border-style: solid;
+    border-width: thin;
+    border-color: #00239E;
+    background: white;
+    color: #00239E;
+}
+
+.book-title {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.book-author {
+    font-style: italic;
+    padding-bottom: 0.5em;
+}
+
+.book-price {
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+.book-image {
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+}
+
+.book-width {
+    height: 200px;
+}
+
+.description-box {
+    justify-content: center;
+    text-align: center;
+    width: 120px;
+}
+
+.read-now-pos {
+    position: absolute;
+    top: 72.5%;
+    left: 40%;
+    transform: translate(-117%, 0%);
+}
+
+.add-to-cart-pos {
+    position: absolute;
+    top: 72.5%;
+    left: 50%;
+    transform: translate(15%, 0%);
+}
+
+.price-pos {
+    position: absolute;
+    top: 58%;
+    left: 58%;
+    transform: translate(82%, 0%);
+}
+
+.round-button {
+    border-radius: 20px;
+}
+
+.price-font {
+    font-family: var(--price-font-family);
+}

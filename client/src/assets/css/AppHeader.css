@@ -1,0 +1,117 @@
+header {
+    background: var(--primary-background-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f8e9c5;
+    padding: 1em;
+    gap: 1em;
+}
+
+.text-logo {
+    font-family: var(--default-font-family);
+    color: #00239E;
+}
+
+.search-bar {
+    padding: 0.5em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-indent: 1em;
+    transition: width 2s cubic-bezier(0.18, 0.89, 0.32, 1.15);
+    width: 100%;
+}
+
+input:hover {
+    width: 358px;
+}
+
+.search-button {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.pill-button {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 20px;
+}
+
+.pill-button-cart {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 200px;
+    margin-right: 10px
+}
+
+.pill-button-count {
+    padding-top: 0.05em;
+    padding-bottom: 0.05em;
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+.title-and-search-bar {
+    display: flex;
+}
+
+.search-bar-and-button {
+    display: flex;
+}
+
+.header-dropdown-and-cart {
+    display: flex
+}
+
+.header-space {
+    justify-content: space-between;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: -10px;
+    right: -2px;
+}
+
+.yellow-border-yellow-bg {
+    border-style: solid;
+    border-width: thin;
+
+    border-color: var(--color-primary-dark);
+    background: var(--color-primary-dark);
+    color: white;
+}
+
+.yellow-border-yellow-bg:hover,
+.yellow-border-yellow-bg:active {
+    border-style: solid;
+    border-width: thin;
+    border-color: #ffe600;
+    background: #ffe600;
+    color: white;
+}

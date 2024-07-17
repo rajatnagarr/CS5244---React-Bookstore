@@ -1,0 +1,132 @@
+
+.mid {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /*background-color: #00132d; !* Set the background color *!*/
+    padding: 0;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.genre {
+    margin: 0 1rem;
+    width: 139px;
+    height: 62px;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Adjust gap to match the design */
+}
+
+.book {
+    width: 10rem;
+    height: 15rem;
+    /* Add other styles like box-shadow, border-radius if necessary */
+}
+
+.third {
+    display: flex;
+    flex-direction: row; /* Changed from column to row */
+    align-items: baseline; /* Align items on the baseline */
+    justify-content: center; /* Center items horizontally */
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.quote, .quote2, .quote3 {
+    color: var(--color-grey-light-1);
+    font-size: medium;
+    font-weight: bold;
+}
+
+.third button {
+    font-family: 'Open Sans', sans-serif; /* Ensures font consistency */
+    font-size: 1rem; /* Adequate size for readability */
+    color: var(--secondary-text-color); /* Text color that contrasts well with the button's background */
+    background-color: var(--primary-color); /* A background color that fits the site's color scheme */
+    border: none; /* Removes the default border */
+    padding: 1rem 1rem; /* Provides ample space around the text */
+    border-radius: 100px; /* Rounded corners for a modern look */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    transition: all 0.3s; /* Smooth transition for interactive states */
+    box-shadow: var(--shadow-light); /* Subtle shadow for depth */
+    outline: none; /* Removes the default focus outline */
+    /* Add any hover, focus, active states */
+}
+
+
+
+/* Adjust the .container styles if necessary */
+.container {
+    max-width: 100%; /* Set max-width to 100% for full width */
+    /* Other styles... */
+
+}
+
+
+/* Ensure you add media queries if responsiveness is required */
+.shop-button:hover {
+    animation: bubble 0.4s ease-out;
+}
+@keyframes bubble {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.container {
+    position: relative; /* Make sure your container is relative */
+    /* ... other styles ... */
+}
+
+.slider-controls {
+    position: absolute; /* Position your controls absolutely within the container */
+    top: 50%; /* Center vertically */
+    width: 100%; /* Take full width of the container */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between for the buttons */
+    align-items: center; /* Align items vertically */
+    pointer-events: none; /* Allows clicks to pass through to elements below */
+}
+
+.slider-controls button {
+    pointer-events: auto; /* Enable pointer events for the buttons */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Padding for larger click area */
+    margin-top: -10%; /* Adjust this value to center the buttons as needed */
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+/* If the buttons have a specific class, you can target them for further styling */
+.slider-controls .left-arrow {
+    position: absolute;
+    left: 0;
+}
+
+.slider-controls .right-arrow {
+    position: absolute;
+    right: 0;
+}

@@ -1,0 +1,181 @@
+/* TheHeaderDropdown.css */
+.header-dropdown {
+    position: relative;
+}
+
+.categories-button {
+    background-color: var(--primary-color-dark);
+    margin-top: 0.25em;
+}
+
+.header-dropdown ul {
+    background-color: white;
+    color: black;
+    display: none;
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.header-dropdown li {
+    padding: 0.25em 0.5em;
+}
+
+.header-dropdown a {
+    color: #00239E;
+    background: white;
+    text-decoration: none;
+}
+
+.header-dropdown a:hover,
+.header-dropdown li:hover a {
+    background: var(--primary-color-dark);
+    color: white;
+}
+
+.header-dropdown li:hover {
+    background: var(--primary-color-dark);
+    color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #00239E;
+}
+
+.header-dropdown:hover ul {
+    display: block;
+    position: absolute;
+    min-width: 8em;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.categories-button-style {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 20px;
+}
+
+.categories-element {
+    border-radius: 20px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #00239E;
+}
+
+.category-link-second,
+.category-link-second:visited {
+    color: var(--secondary-background-color);
+    text-decoration: none;
+}
+
+.category-link-second:hover,
+.category-link-second:active {
+    color: var(--secondary-background-color);
+    text-decoration: none;
+}
+
+/* TheHeaderDropdown.css */
+.header-dropdown {
+    position: relative;
+    display: inline-block; /* Ensure that the button and dropdown align properly */
+}
+
+.categories-button-style {
+    background-color: transparent; /* Assuming you want a transparent background */
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 24px;
+    padding: 0.5em 1em; /* Adjust padding as needed */
+    border-radius: 20px;
+}
+
+/* Hide the cross icon by default */
+.cross-icon {
+    display: none;
+}
+
+/* When hovering over the dropdown, switch to the cross icon and display the menu */
+.header-dropdown:hover .cross-icon {
+    display: block;
+}
+
+.header-dropdown:hover .hamburger-icon {
+    display: none;
+}
+
+/* Position the icons within the button */
+.categories-button-style .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Dropdown menu styles */
+.header-dropdown ul {
+    background-color: white;
+    color: black;
+    display: none;
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    position: absolute;
+    min-width: 8em;
+    z-index: 1;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #00239E;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Optional: Adds a shadow for better visibility */
+    transition: opacity 0.3s, visibility 0.3s; /* Smooth transition for the dropdown */
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Show the dropdown menu when hovering over the button */
+.header-dropdown:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* List item styles */
+.header-dropdown li {
+    padding: 0.25em 0.5em;
+}
+
+/* Link styles */
+.header-dropdown a {
+    color: #00239E;
+    background: white;
+    text-decoration: none;
+    display: block; /* Ensure the clickable area extends to the full width of the dropdown */
+}
+
+.header-dropdown a:hover,
+.header-dropdown li:hover a {
+    background: var(--primary-color-dark);
+    color: white;
+}
+
+/* Additional hover styles for list items */
+.header-dropdown li:hover {
+    background: var(--primary-color-dark);
+    color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #00239E;
+}
+
+.categories-button-style .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--secondary-background-color); /* Icon color set to black */
+
+
+}

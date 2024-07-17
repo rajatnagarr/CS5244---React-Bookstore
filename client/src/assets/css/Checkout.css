@@ -1,0 +1,176 @@
+.checkout-page {
+    background: white;
+    color: #00239E;
+}
+.checkout-page-body {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+/*form {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+.form-input {
+    /*display: inline-block;*/
+    padding: 0.3em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.3em;
+    font-size: 1em;
+    transform: none;
+    transition: none;
+    width: 10em;
+}
+
+.form-input:hover {
+    width: 20em;
+}
+
+.set-form-width {
+    width: 20em
+}
+
+
+.form-label {
+    width: auto;
+    margin-right: 0; /* Set to 0 to ensure the label is right next to the input */
+    text-align: left;
+}
+
+form > div {
+    display: flex;
+    align-items: center; /* Add this line to vertically center align the label and input */
+    justify-content: space-between; /* Adjust this to start to prevent stretching */
+    width: 100%; /* Ensure full width */
+    margin-bottom: 0.4em;
+    gap: 1em;
+}
+
+form > div > input,
+form > div > select {
+
+    background-color: silver;
+    margin-left: 0.5em;
+    color: black;
+}
+
+form > .error {
+    color: red;
+    text-align: right;
+}
+
+.error-message {
+    color: red;
+}
+
+.checkoutStatusBox {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-text-2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.pill-button {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 3em;
+}
+
+.white-border-gray-bg {
+    border-style: solid;
+    border-width: thin;
+
+    border-color: #4e4e4e;
+    background: grey;
+    color: white;
+}
+
+.white-border-gray-bg:hover,
+.white-border-gray-bg:active {
+    background: silver;
+    color: black;
+}
+
+.white-border-blue-bg {
+    border-style: solid;
+    border-width: thin;
+
+    border-color: #00239E;
+    background: #00239E;
+    color: white;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: red;
+    margin-top: -0.5em;
+    margin-bottom: 0.6em;
+    min-height: 10px; /* Reserve space for at least one line of text */
+    font-size: 0.7em;
+    align-self: flex-start;
+}
+
+/*.card-details {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+.spinner {
+    border: 4px solid rgba(0, 35, 158, 1); /* Light grey background */
+    border-top: 4px solid #3498db; /* Blue color for the spinner */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: red;
+    margin-top: -0.5em;
+    margin-bottom: 0.6em;
+    min-height: 10px; /* Reserve space for at least one line of text */
+    font-size: 0.9em;
+    align-self: flex-start;
+}
+
+
+/* Add this to your Checkout.css */
+.status-message-container {
+    min-height: 30px; /* Adjust this value as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
