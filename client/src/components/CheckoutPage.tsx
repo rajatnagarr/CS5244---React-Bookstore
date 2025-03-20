@@ -13,6 +13,7 @@ import { useCategory } from "../contexts/CategoryContext";
 import axios from "axios";
 import { OrderStore } from '../contexts/OrderContext';
 import {OrderTypes} from "../reducers/OrderReducer";
+import { buildApiUrl } from "../utils";
 
 function CheckoutPage() {
   const { cart, dispatch } = useContext(CartStore);
@@ -135,7 +136,7 @@ function CheckoutPage() {
     const orders = JSON.stringify(order);
 
     // console.log("here you go", orders);     //you can uncomment this to see the orders JSON on the console
-    const url = 'http://webdev.cs.vt.edu:8080/RajatBookstoreReactTransact/api/orders';
+    const url = buildApiUrl('orders');
     const orderDetails: OrderDetails = await axios.post(url, orders,
         {headers: {
             "Content-Type": "application/json",

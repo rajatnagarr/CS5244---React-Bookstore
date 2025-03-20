@@ -8,6 +8,7 @@ import { BookItem } from "../types";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import { buildApiUrl } from "../utils";
 
 interface CategoryBookListProps {
   catList: any[];
@@ -18,10 +19,8 @@ const CategoryBookList = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const baseUrl =
-      "http://webdev.cs.vt.edu:8080/RajatBookstoreReactTransact/api/categories/name";
     axios
-      .get(`${baseUrl}/${id}/books`)
+      .get(buildApiUrl(`categories/name/${id}/books`))
       .then((result) => {
         setBookList(result.data); // Update the state with the fetched books
       })

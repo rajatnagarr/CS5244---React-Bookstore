@@ -10,7 +10,7 @@ import ConfirmationPage from "./components/ConfirmationPage";
 
 function App() {
     return (
-      <Router basename ={"RajatBookstoreReactTransact"}>
+      <Router>
           <AppHeader />
           <Routes>
               <Route path="/" element={<Home />} />
@@ -28,4 +28,3 @@ function App() {
 }
 
 export default App;
-
