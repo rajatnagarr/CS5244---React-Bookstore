@@ -15,7 +15,6 @@ import jakarta.ws.rs.core.MediaType;
 
 import java.util.List;
 
-@ApplicationPath("/")
 @Path("/")
 public class ApiResource {
 
