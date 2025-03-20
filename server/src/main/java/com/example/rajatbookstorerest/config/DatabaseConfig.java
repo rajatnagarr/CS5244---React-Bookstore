@@ -26,6 +26,9 @@ public class DatabaseConfig {
     @Bean
     @Primary
     public DataSource dataSource() {
+        System.out.println("Creating DataSource with URL: " + url);
+        System.out.println("Username: " + username);
+        System.out.println("Driver: " + driverClassName);
         return DataSourceBuilder
                 .create()
                 .url(url)
